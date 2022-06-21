@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="module" src="./gameboard.js"></script>
+    <script type="module" src="./main.js" defer></script>
+    <link rel="stylesheet" href="./style.css" />
+    <title>O&X</title>
+  </head>
+  <body>
+    <div id="score-container">
+      <div id="X-total"></div>
+      <button>Reset</button>
+      <div id="O-total"></div>
+    </div>
+    <div class="board-container"></div>
+    <div class="results-container"></div>
+  </body>
+  <div class="ui-container">
+    <h1>AI or HUMAN?</h1>
+    <div class="radio-container">
+      <label for="AI" class="radio"
+        ><input type="radio" name="human|ai" value="AI" id="AI" />
+        <div class="radio-color"></div>
+        AI
+      </label>
+      <label for="human" class="radio"
+        ><input type="radio" name="human|ai" value="human" id="human" checked />
+        <div class="radio-color"></div>
+        Human
+      </label>
+    </div>
+    <button id="let-btn">Let's Go</button>
+  </div>
+</html>
